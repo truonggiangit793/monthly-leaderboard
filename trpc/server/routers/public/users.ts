@@ -7,16 +7,16 @@ export const usersRouter = t.router({
     const users: User[] = [
       {
         id: 1,
-        name: "John Doe",
-        email: "john.doe@example.com",
-        avatarUrl: "https://example.com/avatar.jpg"
+        name: 'John Doe',
+        email: 'john.doe@example.com',
+        avatarUrl: 'https://example.com/avatar.jpg',
       },
       {
         id: 2,
-        name: "Jane Smith",
-        email: "jane.smith@example.com",
-        avatarUrl: "https://example.com/avatar2.jpg"
-      }
+        name: 'Jane Smith',
+        email: 'jane.smith@example.com',
+        avatarUrl: 'https://example.com/avatar2.jpg',
+      },
     ];
 
     const { page, limit } = input;

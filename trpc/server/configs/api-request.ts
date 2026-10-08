@@ -4,10 +4,10 @@ import { TRPCError } from '@trpc/server';
 import type { WebTRPCContext } from '../context';
 
 const publicErrorByStatus: Record<number, { code: TRPCError['code']; message: string }> =
-{
-  400: { code: 'BAD_REQUEST', message: 'Invalid public API request' },
-  404: { code: 'NOT_FOUND', message: 'Resource not found' },
-};
+  {
+    400: { code: 'BAD_REQUEST', message: 'Invalid public API request' },
+    404: { code: 'NOT_FOUND', message: 'Resource not found' },
+  };
 
 export const apiErrorResponseSchema = z.object({
   code: z.string(),
